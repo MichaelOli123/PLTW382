@@ -1,10 +1,8 @@
 /*
  * Activity 3.8.2
  */
-public class Traversing2DArrays
-{
-  public static void main(String[] args)
-  {
+public class Traversing2DArrays {
+  public static void main(String[] args) {
    String[][] board = { {"close", "quarter"},
                         {"moon", "rock"},
                         {"band", "stand"},
@@ -16,5 +14,5 @@ public class Traversing2DArrays
         System.out.println(board[i][j]);
       }
     }
-}
+  }
 }

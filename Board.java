@@ -37,13 +37,21 @@ public class Board
    * 
    * Precondition: gameboard is populated with tiles
    * 
-   * @return a string represetation of the board
+   * @return a string representation of the board
    */
   public String toString()
   {
- 
-    /* your code here */
- 
+    for (int i = 0; i < gameboard.length; i++) {
+      for (int j = 0; j < gameboard[i].length; j++) {
+          gameboard[i][j] = new Tile(tileValues[i*gameboard[i].length + j]);
+      }
+  }
+
+  for (int i = 0; i < gameboard.length; i++) {
+    System.out.println(java.util.Arrays.toString(gameboard[i]));
+  }
+  // FIX THE ABOVE CODE BTW THIS IS STEP 15-16
+    
     return "";
   }
 

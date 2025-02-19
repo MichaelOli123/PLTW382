@@ -41,17 +41,12 @@ public class Board
    */
   public String toString()
   {
-    for (int i = 0; i < gameboard.length; i++) {
-      for (int j = 0; j < gameboard[i].length; j++) {
-          gameboard[i][j] = new Tile(tileValues[i*gameboard[i].length + j]);
+    for (String[] row : board) {
+      for (String str : row) {
+      System.out.print(str + "\t");
       }
-  }
-
-  for (int i = 0; i < gameboard.length; i++) {
-    System.out.println(java.util.Arrays.toString(gameboard[i]));
-  }
-  // FIX THE ABOVE CODE BTW THIS IS STEP 15-16
-    
+      System.out.println("");
+    }
     return "";
   }
 

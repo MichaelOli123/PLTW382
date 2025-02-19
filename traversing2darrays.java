@@ -15,6 +15,8 @@ public class Traversing2DArrays {
       }
       System.out.println("");
     }
+    
+    System.out.println("");
 
     /* enhanced for loop */
     for (String[] row : board) {

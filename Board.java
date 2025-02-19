@@ -37,16 +37,18 @@ public class Board
    * 
    * Precondition: gameboard is populated with tiles
    * 
-   * @return a string representation of the board
+   * @return a string represetation of the board
    */
   public String toString()
   {
-    for (String[] row : board) {
-      for (String str : row) {
-      System.out.print(str + "\t");
+ 
+    /* your code here */
+    for (int i=0; i<gameboard.length; i++) {
+      for (int j=0; j<gameboard[0].length; j++){
+        System.out.print(gameboard[i][j] + "\t");
       }
       System.out.println("");
-    }
+    } 
     return "";
   }
 
